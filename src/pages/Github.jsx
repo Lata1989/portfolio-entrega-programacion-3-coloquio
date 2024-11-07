@@ -11,7 +11,7 @@ import johny from '../assets/Johnny_Tightlips.png'; // Imagen de Johnny Boca cer
 const getTechIcon = (tech) => {
     if (!tech || tech === 'Desconocido') {
         // Si no hay tecnología o es "Desconocido", mostramos la imagen de Johnny
-        return <img src={johny} alt="Johnny" style={{ width: '30px', height: '30px', objectFit: 'cover' }} />;
+        return <img src={johny} alt="Johnny" style={{ width: '45px', height: '45px', objectFit: 'cover' }} />;
     }
 
     switch (tech.toLowerCase()) {

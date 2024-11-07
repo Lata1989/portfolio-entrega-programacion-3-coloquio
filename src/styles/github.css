@@ -1,0 +1,52 @@
+.github {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.github h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: var(--color-bg);
+    color: var(--color-primary);
+}
+
+table td {
+    background-color: #fff;
+    color: var(--color-text);
+}
+
+table a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+pre {
+    background-color: #f1f1f1;
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    font-size: 0.9rem;
+    border-radius: 4px;
+}

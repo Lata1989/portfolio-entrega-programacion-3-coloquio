@@ -1,0 +1,46 @@
+/* navbar.css */
+nav {
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 0; /* Márgenes más pequeños */
+    font-size: 1.4rem; /* Aumentamos el tamaño de la letra */
+    text-align: center;
+    font-weight: 600; /* Hacemos la letra un poco más gruesa */
+    padding: 10px 20px; /* Ajustamos el padding para hacerlo más cómodo */
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+/* Efectos de hover */
+nav a:hover {
+    color: var(--color-bg); /* Cambia a color de fondo */
+    background-color: rgba(39, 174, 96, 0.2); /* Un verde suave en lugar de un cambio tan fuerte */
+    transform: translateY(-2px); /* Efecto de elevarse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+}
+
+/* Para pantallas grandes */
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 20px 40px;
+        border-radius: 0;
+        box-shadow: none; /* Elimina la sombra en pantallas grandes */
+    }
+
+    nav a {
+        font-size: 1.2rem; /* Ajustamos el tamaño para pantallas más grandes */
+        margin: 0 10px; /* Márgenes más pequeños en pantallas grandes */
+    }
+}

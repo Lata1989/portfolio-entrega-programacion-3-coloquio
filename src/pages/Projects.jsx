@@ -13,6 +13,11 @@ const projectsData = [
         name: 'CRUD App React',
         description: 'Sistema de CRUD en React con autenticación via Auth0.',
         url: 'https://login-logout-crud-react-p3-frontend.vercel.app/'
+    },
+    {
+        name: 'Flappy Bird',
+        description: `Juego de Flappy Bird. Sin sonido.`,
+        url: 'https://flappy-bird-ruby-eight.vercel.app/'
     }
 ];
 

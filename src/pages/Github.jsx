@@ -1,8 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { marked } from "marked";  // Importar la librería marked
 import '../styles/github.css';
 import { FaReact } from 'react-icons/fa'; // React
-import { SiAngular, SiTypescript, SiGo } from 'react-icons/si'; // Angular, TypeScript, Go
+import { SiAngular, SiTypescript, SiGo, SiNodedotjs } from 'react-icons/si'; // Angular, TypeScript, Go, Node.js
 import { SiCss3, SiHtml5, SiJavascript } from 'react-icons/si'; // CSS, HTML, JavaScript
 import { DiPython } from 'react-icons/di'; // Python
 import johny from '../assets/Johnny_Tightlips.png'; // Imagen de Johnny Boca cerrada
@@ -36,8 +37,20 @@ const getTechIcon = (tech) => {
     }
 };
 
+// Función para determinar el icono de framework/librería
+const getFrameworkIcon = (tech, languages) => {
+    if (tech === 'JavaScript' && languages === 'JavaScript') {
+        return <SiNodedotjs style={{ width: '30px', height: '30px', margin: '0 5px' }} />; // Logo de Node.js si solo es JS
+    }
+    return getTechIcon(tech); // Icono normal en caso de que no sea solo JS
+};
+
 export const Github = () => {
     const [repos, setRepos] = useState([]);
+    const [readmeVisible, setReadmeVisible] = useState({}); // Estado para manejar visibilidad de README
+    const [modalContent, setModalContent] = useState(""); // Contenido del README para el modal
+    const [isModalOpen, setIsModalOpen] = useState(false); // Estado para manejar el modal
+
     const username = process.env.REACT_APP_GITHUB_USERNAME;
     const token = process.env.REACT_APP_GITHUB_TOKEN;
 
@@ -114,6 +127,17 @@ export const Github = () => {
         fetchRepos();
     }, [username, token]);
 
+    // Función para manejar el toggle de visibilidad del README
+    const toggleModal = (repoReadme) => {
+        setModalContent(marked(repoReadme)); // Convertir el README a HTML y asignarlo al modal
+        setIsModalOpen(true); // Abrir el modal
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false); // Cerrar el modal
+        setModalContent(""); // Limpiar el contenido del modal
+    };
+
     return (
         <div>
             <h1>Mis Repositorios de GitHub</h1>
@@ -143,12 +167,12 @@ export const Github = () => {
                                     ))}
                                 </td>
                                 <td>
-                                    {getTechIcon(repo.tech)}
+                                    {getFrameworkIcon(repo.tech, repo.languages)}
                                 </td>
                                 <td>
-                                    <pre style={{ maxHeight: '200px', overflowY: 'scroll', backgroundColor: '#f1f1f1', padding: '10px' }}>
-                                        {repo.readme}
-                                    </pre>
+                                    <button onClick={() => toggleModal(repo.readme)}>
+                                        Mostrar README
+                                    </button>
                                 </td>
                             </tr>
                         ))
@@ -159,6 +183,16 @@ export const Github = () => {
                     )}
                 </tbody>
             </table>
+
+            {/* Modal */}
+            {isModalOpen && (
+                <div className="modal-overlay" onClick={closeModal}>
+                    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                        <span className="close-button" onClick={closeModal}>×</span>
+                        <div dangerouslySetInnerHTML={{ __html: modalContent }} />
+                    </div>
+                </div>
+            )}
         </div>
     );
 };

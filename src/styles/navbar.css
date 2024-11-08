@@ -24,7 +24,7 @@ nav a {
 /* Efectos de hover */
 nav a:hover {
     color: var(--color-bg); /* Cambia a color de fondo */
-    background-color: rgba(39, 174, 96, 0.2); /* Un verde suave en lugar de un cambio tan fuerte */
+    background-color: rgba(39, 64, 174, 0.2); /* Un verde suave en lugar de un cambio tan fuerte */
     transform: translateY(-2px); /* Efecto de elevarse */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más suave */
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { SiJavascript, SiReact, SiNodedotjs, SiMongodb, SiHtml5, SiCss3, SiAngular, SiKotlin, SiGo, SiCsharp, SiMysql, SiPostgresql, SiMicrosoftsqlserver } from 'react-icons/si'; // Iconos de lenguajes y tecnologías
+import { SiJavascript, SiReact, SiNodedotjs, SiMongodb, SiHtml5, SiCss3, SiAngular, SiKotlin, SiGo, SiCsharp, SiMysql, SiPostgresql, SiMicrosoftsqlserver, SiTypescript } from 'react-icons/si'; // Iconos de lenguajes y tecnologías
 import '../styles/home.css';
 import foto from "../assets/io.jpg";
 
@@ -31,6 +31,7 @@ export const Home = () => {
                     <SiHtml5 title="HTML5" />
                     <SiCss3 title="CSS3" />
                     <SiJavascript title="JavaScript" />
+                    <SiTypescript title='Typescript'></SiTypescript>
                     <SiNodedotjs title="Node.js" />
                     <SiReact title="React" />
                     <SiAngular title='Angular'></SiAngular>

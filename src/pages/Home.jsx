@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { SiJavascript, SiReact, SiNodedotjs, SiMongodb, SiHtml5, SiCss3, SiAngular, SiKotlin, SiGo, SiCsharp } from 'react-icons/si'; // Iconos de lenguajes y tecnologías
+import { SiJavascript, SiReact, SiNodedotjs, SiMongodb, SiHtml5, SiCss3, SiAngular, SiKotlin, SiGo, SiCsharp, SiMysql, SiPostgresql, SiMicrosoftsqlserver } from 'react-icons/si'; // Iconos de lenguajes y tecnologías
 import '../styles/home.css';
 import foto from "../assets/io.jpg";
 
@@ -26,7 +26,7 @@ export const Home = () => {
 
             {/* Sección de tecnologías */}
             <div className="tech-logos">
-                <h2>Tecnologías que domino</h2>
+                <h2>Tecnologías</h2>
                 <div className="tech-icons">
                     <SiHtml5 title="HTML5" />
                     <SiCss3 title="CSS3" />
@@ -34,6 +34,8 @@ export const Home = () => {
                     <SiNodedotjs title="Node.js" />
                     <SiReact title="React" />
                     <SiAngular title='Angular'></SiAngular>
+                    <SiMysql title='MySQL'></SiMysql>
+                    <SiMicrosoftsqlserver title='SQL Server'></SiMicrosoftsqlserver>
                     <SiMongodb title="MongoDB" />
                     <SiKotlin title='Kotlin'></SiKotlin>
                     <SiGo title='Go'></SiGo>

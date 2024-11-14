@@ -60,6 +60,27 @@ h1 {
     color: var(--color-accent);
 }
 
+.tech-logos {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tech-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 3rem; /* Tamaño de los íconos */
+    color: var(--color-primary); /* Color de los íconos */
+}
+
+.tech-icons svg {
+    transition: transform 0.3s ease;
+}
+
+.tech-icons svg:hover {
+    transform: scale(1.2); /* Agrandar ícono al pasar el cursor */
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .home {

@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';  // Ejemplo de íconos de redes sociales
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { SiJavascript, SiReact, SiNodedotjs, SiMongodb, SiHtml5, SiCss3, SiAngular, SiKotlin, SiGo, SiCsharp } from 'react-icons/si'; // Iconos de lenguajes y tecnologías
 import '../styles/home.css';
 import foto from "../assets/io.jpg";
 
@@ -20,6 +21,23 @@ export const Home = () => {
                 </div>
                 <div className="right-content">
                     <img src={foto} alt="Imagen de presentación" />
+                </div>
+            </div>
+
+            {/* Sección de tecnologías */}
+            <div className="tech-logos">
+                <h2>Tecnologías que domino</h2>
+                <div className="tech-icons">
+                    <SiHtml5 title="HTML5" />
+                    <SiCss3 title="CSS3" />
+                    <SiJavascript title="JavaScript" />
+                    <SiNodedotjs title="Node.js" />
+                    <SiReact title="React" />
+                    <SiAngular title='Angular'></SiAngular>
+                    <SiMongodb title="MongoDB" />
+                    <SiKotlin title='Kotlin'></SiKotlin>
+                    <SiGo title='Go'></SiGo>
+                    <SiCsharp title='C#'></SiCsharp>
                 </div>
             </div>
         </>

@@ -4,7 +4,7 @@ import '../styles/header.css';
 export const Header = () => {
     return (
         <header className="header">
-            <h1>Portafolio de Pablo Alejandro de la Iglesia</h1>
+            <h1>Portfolio de Pablo Alejandro de la Iglesia</h1>
         </header>
     );
 };

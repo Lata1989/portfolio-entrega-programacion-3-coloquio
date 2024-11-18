@@ -7,7 +7,7 @@ import foto from "../assets/io.jpg";
 export const Home = () => {
     return (
         <>
-            <h1>Bienvenido a mi Portafolio</h1>
+            <h1>Bienvenido a mi portfolio</h1>
             <div className="home">
                 <div className="left-content">
                     <p>

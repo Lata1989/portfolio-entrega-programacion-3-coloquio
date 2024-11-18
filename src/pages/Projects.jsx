@@ -5,6 +5,11 @@ import nodirenada from '../assets/Johnny_Tightlips.png';
 
 const projectsData = [
     {
+        name:'HTML',
+        description: `Pagina web para demostrar habilidades en HTML`,
+        url: `https://proyecto-html-vert.vercel.app/`
+    },
+    {
         name: 'Lista de tareas',
         description: `Sistema de lista de tareas en Angular con local Storage.`,
         url: 'https://app-lista-tareas-angular-localstorage.vercel.app/'
@@ -18,7 +23,8 @@ const projectsData = [
         name: 'Flappy Bird',
         description: `Juego de Flappy Bird. Sin sonido.`,
         url: 'https://flappy-bird-ruby-eight.vercel.app/'
-    }
+    },
+
 ];
 
 export const Projects = () => {

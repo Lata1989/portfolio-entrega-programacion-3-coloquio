@@ -11,8 +11,12 @@ export const Home = () => {
             <div className="home">
                 <div className="left-content">
                     <p>
-                        Hola, soy Pablo Alejandro de la Iglesia, también conocido como Latita. Soy un desarrollador fullstack especializado en
-                        tecnologías web modernas como React, Node.js y MongoDB. Explora mis proyectos, mis repositorios en GitHub o contáctame para más información.
+                        Hola, soy Pablo Alejandro de la Iglesia, un desarrollador fullstack apasionado por crear soluciones innovadoras utilizando tecnologías modernas como React, Node.js y MongoDB.
+                        Mi objetivo es desarrollar experiencias web intuitivas y eficientes que marquen la diferencia.
+                    </p>
+                    <p>
+                        En mi portafolio encontrarás proyectos que reflejan mi dedicación y habilidades. Además, puedes explorar mis repositorios en GitHub para conocer más sobre mi trabajo.
+                        Si deseas conectarte conmigo, no dudes en contactarme a través de LinkedIn. ¡Estoy siempre abierto a nuevas ideas y colaboraciones!
                     </p>
                     <div className="social-icons">
                         <a href="https://github.com/Lata1989" target="_blank" rel="noopener noreferrer"><FaGithub /></a>

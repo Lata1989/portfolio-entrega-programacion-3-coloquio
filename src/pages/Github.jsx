@@ -6,7 +6,7 @@ import { FaReact } from 'react-icons/fa'; // React
 import { SiAngular, SiTypescript, SiGo, SiNodedotjs } from 'react-icons/si'; // Angular, TypeScript, Go, Node.js
 import { SiCss3, SiHtml5, SiJavascript } from 'react-icons/si'; // CSS, HTML, JavaScript
 import { DiPython } from 'react-icons/di'; // Python
-import johny from '../assets/Johnny_Tightlips.png'; // Imagen de Johnny Boca cerrada
+import johny from '../assets/images/Johnny_Tightlips.png'; // Imagen de Johnny Boca cerrada
 
 // Mapeo de tecnologías a iconos
 const getTechIcon = (tech) => {

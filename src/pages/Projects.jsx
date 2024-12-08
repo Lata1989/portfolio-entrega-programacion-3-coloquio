@@ -1,7 +1,7 @@
 import React from 'react';
 import { ProjectCard } from '../components/ProjectCard'; // Asumiendo que creaste este componente para mostrar proyectos
 import '../styles/projects.css';
-import nodirenada from '../assets/Johnny_Tightlips.png';
+import nodirenada from '../assets/images/Johnny_Tightlips.png';
 
 const projectsData = [
     {

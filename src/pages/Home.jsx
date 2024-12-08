@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { SiJavascript, SiReact, SiNodedotjs, SiMongodb, SiHtml5, SiCss3, SiAngular, SiKotlin, SiGo, SiCsharp, SiMysql, SiPostgresql, SiMicrosoftsqlserver, SiTypescript } from 'react-icons/si'; // Iconos de lenguajes y tecnologías
 import cv from '../assets/cv/cv.pdf';
 import '../styles/home.css';
-import foto from "../assets/io.jpg";
+import foto from "../assets/images/io.jpg";
 
 export const Home = () => {
     return (

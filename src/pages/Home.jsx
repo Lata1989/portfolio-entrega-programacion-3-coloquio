@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaDownload, FaGithub, FaLinkedin } from 'react-icons/fa';
-import { SiJavascript, SiReact, SiNodedotjs, SiMongodb, SiHtml5, SiCss3, SiAngular, SiKotlin, SiGo, SiCsharp, SiMysql, SiPostgresql, SiMicrosoftsqlserver, SiTypescript } from 'react-icons/si'; // Iconos de lenguajes y tecnologías
+import { SiJavascript, SiReact, SiNodedotjs, SiMongodb, SiHtml5, SiCss3, SiAngular, SiKotlin, SiGo, SiCsharp, SiMysql, SiPostgresql, SiMicrosoftsqlserver, SiTypescript, SiGradle } from 'react-icons/si'; // Iconos de lenguajes y tecnologías
 import cv from '../assets/cv/cv.pdf';
 import '../styles/home.css';
 import foto from "../assets/images/io.jpg";
@@ -41,6 +41,7 @@ export const Home = () => {
                     <SiReact title="React" />
                     <SiCsharp title="C#" />
                     <SiKotlin title="Kotlin" />
+                    <SiGradle title='Gradle'></SiGradle>
                     <SiGo title="Go" />
                 </div>
             </div>

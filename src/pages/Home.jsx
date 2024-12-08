@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { SiJavascript, SiReact, SiNodedotjs, SiMongodb, SiHtml5, SiCss3, SiAngular, SiKotlin, SiGo, SiCsharp, SiMysql, SiPostgresql, SiMicrosoftsqlserver, SiTypescript } from 'react-icons/si'; // Iconos de lenguajes y tecnologías
+import cv from '../assets/cv/cv.pdf';
 import '../styles/home.css';
 import foto from "../assets/io.jpg";
 
@@ -22,6 +23,9 @@ export const Home = () => {
                         <a href="https://github.com/Lata1989" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
                         <a href="https://linkedin.com/in/pablo-alejandro-de-la-iglesia-84360b234/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
                     </div>
+                    <a href={cv} download="Pablo_Alejandro_de_la_Iglesia_CV.pdf" className="download-cv">
+                        Descargar CV
+                    </a>
                 </div>
                 <div className="right-content">
                     <img src={foto} alt="Imagen de presentación" />

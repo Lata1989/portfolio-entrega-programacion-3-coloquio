@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaDownload, FaGithub, FaLinkedin } from 'react-icons/fa';
-import { SiJavascript, SiReact, SiNodedotjs, SiMongodb, SiHtml5, SiCss3, SiAngular, SiKotlin, SiGo, SiCsharp, SiMysql, SiPostgresql, SiMicrosoftsqlserver, SiTypescript, SiGradle, SiJetpackcompose, SiXaml } from 'react-icons/si'; // Iconos de lenguajes y tecnologías
+import { SiJavascript, SiReact, SiNodedotjs, SiMongodb, SiHtml5, SiCss3, SiAngular, SiKotlin, SiGo, SiCsharp, SiMysql, SiPostgresql, SiMicrosoftsqlserver, SiTypescript, SiGradle, SiJetpackcompose, SiXaml, SiCplusplus } from 'react-icons/si'; // Iconos de lenguajes y tecnologías
 import cv from '../assets/cv/cv.pdf';
 import '../styles/home.css';
 import foto from "../assets/images/io.jpg";
@@ -35,6 +35,7 @@ export const Home = () => {
             <div className="tech-logos">
                 <h2>Tecnologías nivel trainee</h2>
                 <div className="tech-icons">
+                    <SiCplusplus title='C++'></SiCplusplus>
                     <SiTypescript title="Typescript" />
                     <SiAngular title="Angular" />
                     <SiNodedotjs title="Node.js" />

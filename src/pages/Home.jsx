@@ -39,7 +39,6 @@ export const Home = () => {
                     <SiAngular title="Angular" />
                     <SiNodedotjs title="Node.js" />
                     <SiReact title="React" />
-                    <SiCsharp title="C#" />
                     <SiKotlin title="Kotlin" />
                     <SiGradle title='Gradle'></SiGradle>
                     <SiJetpackcompose title='Jetpack Compose'></SiJetpackcompose>
@@ -50,6 +49,7 @@ export const Home = () => {
             <div className="tech-logos">
                 <h2>Tecnologías nivel junior</h2>
                 <div className="tech-icons">
+                    <SiCsharp title="C#" />
                     <SiHtml5 title="HTML5" />
                     <SiCss3 title="CSS3" />
                     <SiJavascript title="JavaScript" />

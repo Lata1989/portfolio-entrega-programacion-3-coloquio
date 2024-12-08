@@ -13,7 +13,7 @@ export const Home = () => {
                 <div className="left-content">
                     <p>
                         Hola, soy Pablo Alejandro de la Iglesia, un desarrollador fullstack apasionado por crear soluciones innovadoras utilizando tecnologías modernas como React, Node.js y MongoDB.
-                        Mi objetivo es desarrollar experiencias web intuitivas y eficientes que marquen la diferencia.
+                        Mi objetivo es desarrollar experiencias web intuitivas y eficientes que marquen la diferencia. Este portfolio en particular está desarrollado con React.
                     </p>
                     <p>
                         En mi portafolio encontrarás proyectos que reflejan mi dedicación y habilidades. Además, puedes explorar mis repositorios en GitHub para conocer más sobre mi trabajo.

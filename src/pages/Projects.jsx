@@ -24,6 +24,11 @@ const projectsData = [
         description: `Juego de Flappy Bird. Sin sonido.`,
         url: 'https://flappy-bird-ruby-eight.vercel.app/'
     },
+    {
+        name: 'Pong Game',
+        description: 'Un juego de Pong hecho en Godot. ¡Descárgalo y juegalo!',
+        url: '/assets/projects/Pong.rar'
+    },
 
 ];
 

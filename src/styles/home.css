@@ -79,11 +79,10 @@ h1 {
 }
 
 .right-content img {
-    max-width: 25rem;
-    height: 25rem;
+    max-width: 35rem;
+    height: 35rem;
     border-radius: 50%;
     object-fit: cover;
-    margin-top: 20px;
 }
 
 /* Sección de tecnologías */

@@ -8,7 +8,7 @@ export const Navbar = () => {
             <Link to="/">Home</Link>
             <Link to="/projects">Proyectos</Link>
             {/* <Link to="/contact">Enviar Mail</Link> */}
-            <Link to="/github">GitHub</Link>
+            {/* <Link to="/github">GitHub</Link> */}
         </nav>
     );
 };

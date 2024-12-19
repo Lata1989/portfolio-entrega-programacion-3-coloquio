@@ -5,6 +5,7 @@
     --color-accent: #643d67;
     --color-text: #333;
     --color-bg: #f4f4f4;
+    --font-size-base: 16px; /* Definir tamaño base de fuente para facilitar el uso de rem */
 }
 
 /* Estilos generales */
@@ -18,15 +19,15 @@ body {
     font-family: Arial, sans-serif;
     background-color: var(--color-bg);
     color: var(--color-text);
+    font-size: 1rem; /* Base de 16px */
 }
 
 /* Título principal */
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* 2.5rem de tamaño base */
     color: var(--color-primary);
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; /* 20px */
     text-align: center;
-    /* Asegura que el título esté centrado */
 }
 
 /* Contenedor principal */
@@ -34,12 +35,10 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 1.25rem; /* 20px */
     flex-wrap: wrap;
     width: 75%;
-    /* Ajusta el ancho a 75% */
     margin: 0 auto;
-    /* Centra el contenedor */
 }
 
 /* Sección de la izquierda (texto y redes sociales) */
@@ -49,21 +48,21 @@ h1 {
 }
 
 .left-content p {
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* 1.2rem en base a 16px */
     color: var(--color-text);
     line-height: 1.6;
-    margin-bottom: 30px;
-    max-width: 500px;
+    margin-bottom: 1.875rem; /* 30px */
+    max-width: 31.25rem; /* 500px */
 }
 
 .left-content .social-icons {
     display: flex;
-    gap: 15px;
-    margin-top: 20px;
+    gap: 0.9375rem; /* 15px */
+    margin-top: 1.25rem; /* 20px */
 }
 
 .social-icons a {
-    font-size: 2rem;
+    font-size: 2rem; /* 2rem de tamaño base */
     color: var(--color-text);
     text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease;
@@ -81,8 +80,8 @@ h1 {
 }
 
 .right-content img {
-    max-width: 35rem;
-    height: 35rem;
+    max-width: 35rem; /* 560px */
+    height: 35rem; /* 560px */
     border-radius: 50%;
     object-fit: cover;
 }
@@ -90,17 +89,15 @@ h1 {
 /* Sección de tecnologías */
 .tech-logos {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1.25rem; /* 20px */
 }
 
 .tech-icons {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    font-size: 3rem;
-    /* Tamaño de los íconos */
+    gap: 1.25rem; /* 20px */
+    font-size: 3rem; /* 3rem */
     color: var(--color-primary);
-    /* Color de los íconos */
 }
 
 .tech-icons svg {
@@ -109,14 +106,13 @@ h1 {
 
 .tech-icons svg:hover {
     transform: scale(1.2);
-    /* Agrandar ícono al pasar el cursor */
 }
 
 /* Botón de descarga del CV */
 .download-cv {
     display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
+    margin-top: 0.625rem; /* 10px */
+    padding: 0.625rem 1.25rem; /* 10px 20px */
     background-color: #28a745;
     color: #fff;
     text-decoration: none;
@@ -130,38 +126,58 @@ h1 {
     transform: scale(1.1);
 }
 
-/* Responsive: Para pantallas pequeñas */
-@media (max-width: 768px) {
+/* Responsive: Para pantallas pequeñas (menos de 620px) */
+@media (max-width: 620px) {
+    /* Ajustes generales */
+    body {
+        font-size: 0.875rem; /* 14px */
+    }
+
+    h1 {
+        font-size: 2rem; /* Ajustamos el tamaño a 2rem en pantallas pequeñas */
+        margin-bottom: 1rem; /* Ajuste de margen */
+    }
+
     .home {
         flex-direction: column;
-        /* Apila los elementos en pantallas pequeñas */
         align-items: center;
+        padding: 1rem; /* Menos espacio en pantallas pequeñas */
+        width: 90%; /* Aumentamos el ancho del contenedor */
     }
 
     .left-content {
         text-align: center;
         max-width: 100%;
+        margin-bottom: 2rem;
     }
 
-    .right-content {
-        margin-top: 20px;
-    }
-
-    .home h1 {
-        font-size: 2rem;
-    }
-
-    .home p {
-        font-size: 1rem;
+    .left-content p {
+        font-size: 1rem; /* Reducir el tamaño de la fuente para pantallas pequeñas */
+        margin-bottom: 1.5rem; /* Menos espacio entre párrafos */
     }
 
     .social-icons {
         flex-direction: column;
         align-items: center;
+        gap: 1rem; /* Mayor espacio entre iconos */
+    }
+
+    .right-content {
+        margin-top: 1.5rem; /* Mayor espacio en móvil */
+    }
+
+    .right-content img {
+        max-width: 18rem; /* Reducimos el tamaño de la imagen */
+        height: 18rem; /* Ajustamos la altura también */
     }
 
     .tech-icons {
-        font-size: 2rem;
-        gap: 15px;
+        font-size: 2rem; /* Reducir tamaño de los iconos */
+        gap: 1rem; /* Reducir espacio entre iconos */
+    }
+
+    .download-cv {
+        font-size: 1rem; /* Reducir tamaño del botón */
+        padding: 0.5rem 1rem; /* Ajustar el tamaño del botón */
     }
 }

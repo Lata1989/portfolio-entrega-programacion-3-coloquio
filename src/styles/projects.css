@@ -1,4 +1,10 @@
 /* projects.css */
+h1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 .project-card {
     background-color: var(--color-bg);
     border-radius: 8px;

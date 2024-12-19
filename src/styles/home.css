@@ -1,3 +1,4 @@
+/* home.css */
 /* Definir las variables de color (opcional) */
 :root {
     --color-primary: #59469d;
@@ -65,11 +66,12 @@ h1 {
     font-size: 2rem;
     color: var(--color-text);
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-icons a:hover {
     color: var(--color-accent);
+    transform: scale(1.2) rotate(10deg);
 }
 
 /* Sección de la derecha (imagen) */
@@ -120,11 +122,12 @@ h1 {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .download-cv:hover {
     background-color: #218838;
+    transform: scale(1.1);
 }
 
 /* Responsive: Para pantallas pequeñas */

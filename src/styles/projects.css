@@ -1,80 +1,48 @@
-.projects {
-    padding: 20px;
+/* projects.css */
+.project-card {
     background-color: var(--color-bg);
-    display: flex;
-    flex-direction: column;
-    align-items: center;  /* Centra las tarjetas horizontalmente */
-    justify-content: center;
-}
-
-.projects h1 {
-    color: var(--color-primary);
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.projects-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;  /* Centra las tarjetas horizontalmente */
-    justify-content: center;
-    width: 100%;
-    max-width: 1200px; /* Limita el ancho máximo del contenedor */
-}
-
-.projects-list .project-card {
-    background-color: white;
-    border: 1px solid var(--color-secondary);
     border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    width: 100%;
-    max-width: 500px;  /* Ajusta el ancho máximo de las cards */
-    margin: 0 auto;  /* Centra las tarjetas dentro del contenedor */
+    padding: 20px;
+    margin: 1rem 4rem; /* Margen más grande a los costados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.4s ease-in-out;
 }
 
-.projects-list .project-card:hover {
-    transform: translateY(-5px);
-}
-
-.projects-list .project-card h2 {
+.project-card h2 {
+    font-size: 1.5rem;
     color: var(--color-primary);
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-
-.projects-list .project-card p {
-    font-size: 1.1rem;
-    color: var(--color-text);
     margin-bottom: 15px;
 }
 
-.projects-list .project-card a {
+.project-card p {
+    font-size: 1rem;
+    color: var(--color-text);
+    margin-bottom: 20px;
+}
+
+.project-card a {
+    font-size: 1rem;
+    color: var(--color-accent);
     text-decoration: none;
-    color: var(--color-button);
-    font-weight: bold;
+    border: 1px solid var(--color-accent);
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
-.projects-list .project-card a:hover {
-    color: darkorange;
+.project-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-.johny {
-    border-radius: 100%;
+.project-card a:hover {
+    background-color: var(--color-accent);
+    color: white;
 }
 
-/* Responsive */
-@media (min-width: 768px) {
-    .projects-list {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;  /* Centra las cards en filas */
-    }
-
-    .projects-list .project-card {
-        width: 48%;  /* Hace que las tarjetas ocupen el 48% del ancho */
+/* Responsive: Ajuste para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .project-card {
+        margin: 15px 10px; /* Reduce el margen lateral en pantallas pequeñas */
     }
 }

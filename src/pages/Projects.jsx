@@ -33,8 +33,7 @@ const projectsData = [
         name: 'Flappy Bird',
         description: 'Un Flappy Bird hecho en Godot. ¡Descárgalo y juegalo! Completamente con GDScript. Un juego que fue mi primer juego realizado en HTML, CSS y Javascript pero ahora mas divertido!',
         url: '/assets/projects/FlappyBird.rar'
-    },
-
+    }
 ];
 
 export const Projects = () => {

@@ -21,13 +21,18 @@ const projectsData = [
     },
     {
         name: 'Flappy Bird',
-        description: `Juego de Flappy Bird. Sin sonido.`,
+        description: `Juego de Flappy Bird. Sin sonido. Hecho con HTML, CSS y JS.`,
         url: 'https://flappy-bird-ruby-eight.vercel.app/'
     },
     {
         name: 'Pong Game',
-        description: 'Un juego de Pong hecho en Godot. ¡Descárgalo y juegalo!',
+        description: 'Un juego de Pong hecho en Godot. ¡Descárgalo y juegalo! Completamente con GDScript.',
         url: '/assets/projects/Pong.rar'
+    },
+    {
+        name: 'Flappy',
+        description: 'Un Flappy Bird hecho en Godot. ¡Descárgalo y juegalo! Completamente con GDScript. Un juego que fue mi primer juego realizado en HTML, CSS y Javascript pero ahora mas divertido!',
+        url: '/assets/projects/FlappyBird.rar'
     },
 
 ];

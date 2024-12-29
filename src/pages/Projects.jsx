@@ -25,6 +25,11 @@ const projectsData = [
         url: 'https://flappy-bird-ruby-eight.vercel.app/'
     },
     {
+        name: 'Dodge the Creeps',
+        description: `Un juego hecho en Godot. ¡Descárgalo y juegalo! Completamente con GDScript. Es parte de la documentación oficial de Godot.`,
+        url: '/assets/projects/DodgeTheCreeps.rar'
+    },
+    {
         name: 'Pong Game',
         description: 'Un juego de Pong hecho en Godot. ¡Descárgalo y juegalo! Completamente con GDScript.',
         url: '/assets/projects/Pong.rar'

@@ -168,7 +168,9 @@ h1 {
 
     .right-content img {
         max-width: 18rem; /* Reducimos el tamaño de la imagen */
-        height: 18rem; /* Ajustamos la altura también */
+        min-width: 12rem;
+        max-height: 18rem; /* Ajustamos la altura también */
+        min-height: 12rem; /* Ajustamos la altura también */
     }
 
     .tech-icons {

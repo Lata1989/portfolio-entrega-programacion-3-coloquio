@@ -12,17 +12,13 @@ export const Home = () => {
             <div className="home">
                 <div className="left-content">
                     <p>
-                        Hola, soy Pablo Alejandro de la Iglesia, un desarrollador fullstack apasionado por crear soluciones innovadoras utilizando tecnologías modernas como React, Node.js y MongoDB.
-                        Mi objetivo es desarrollar experiencias web intuitivas y eficientes que marquen la diferencia. Este portafolio ha sido desarrollado completamente con React.
+                        Hola, soy Pablo Alejandro de la Iglesia, desarrollador fullstack especializado en el stack MERN, actualmente estoy capacitándome en TypeScript y en el conjunto de Godot con GDScript. Mi objetivo como desarrollador web es crear experiencias intuitivas y eficientes. Este portafolio, desarrollado con React, reflejando mi pasión por este stack tecnológico.                    </p>
+                    <p>
+                        Además, estoy aprendiendo a desarrollar videojuegos con Godot, explorando mecánicas en 2D y 3D. Por su alta complejidad algoritmica y el desafío lógico que implica el desarrollo de mecánicas bien realizadas.
                     </p>
                     <p>
-                        En mi portafolio encontrarás proyectos que reflejan mi dedicación y habilidades, además de descubrir las nuevas tecnologías que estoy aprendiendo.
-                        Si deseas conectarte conmigo, no dudes en contactarme a través de LinkedIn. ¡Estoy siempre abierto a nuevas ideas y colaboraciones!
+                        En mi portafolio encontrarás proyectos destacados y la opción de descargar mi currículum. ¡Estoy abierto a nuevas ideas y colaboraciones!
                     </p>
-                    <p>
-                        Desde esta web también puedes descargar mi currículum vitae para obtener información más detallada sobre mi experiencia y habilidades.
-                    </p>
-
                     <div className="social-icons">
                         <a href="https://github.com/Lata1989" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
                         <a href="https://linkedin.com/in/pablo-alejandro-de-la-iglesia-84360b234/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -40,7 +36,6 @@ export const Home = () => {
                 <h2>Tecnologías que estoy aprendiendo</h2>
                 <div className="tech-icons">
                     <SiGodotengine title='Godot Engine - GDScript'></SiGodotengine>
-                    <SiBlender title='Blender'></SiBlender>
                 </div>
             </div>
             <div className="tech-logos">

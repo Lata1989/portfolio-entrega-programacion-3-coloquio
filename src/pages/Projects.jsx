@@ -43,6 +43,11 @@ const projectsData = [
         name: 'Flappy Bird',
         description: 'Un Flappy Bird hecho en Godot. ¡Descárgalo y juegalo! Completamente con GDScript. Un juego que fue mi primer juego realizado en HTML, CSS y Javascript pero ahora mas divertido!',
         url: '/assets/projects/FlappyBird.rar'
+    },
+    {
+        name: 'Dino Run',
+        description: 'El Dino Run de Chrome hecho en Godot. ¡Descárgalo y juegalo! Completamente con GDScript. Un juego que tenía muchas ganas de hacer ya que no quería quedarme sin internet para poder jugarlo!',
+        url: '/assets/projects/DinoRun.rar'
     }
 ];
 
